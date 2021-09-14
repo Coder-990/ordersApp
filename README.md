@@ -16,7 +16,7 @@
                                             </br>
                                             5: hit "Test Connection" and klick finish
                                             </br>
-                                            for troubles here is video that vill guide you : https://www.youtube.com/watch?v=RdPYA-wDhTA
+                                            for troubles here is video that will be guide you : https://www.youtube.com/watch?v=RdPYA-wDhTA
 </br>
 5: Pull java project "orderapp"
 </br>
