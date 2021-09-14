@@ -5,13 +5,14 @@
 3: Make sure docker container is running - "docker ps"
 </br>
 4: open DBeaver and connect docker postgres ,
+</br>
                                             1: pick icon - create new connection 
                                             </br>
                                             2: pick postgresql , go next
                                             </br>
                                             3: enter username and password, in this case both is "postgres"
                                             </br>
-                                            4: make sure that post is 5432
+                                            4: make sure that port is 5432
                                             </br>
                                             5: hit "Test Connection" and klick finish
                                             </br>
