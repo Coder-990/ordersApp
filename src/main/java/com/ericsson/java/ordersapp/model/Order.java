@@ -13,6 +13,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.Size;
@@ -28,7 +29,8 @@ import java.util.List;
 public class Order {
 
     @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    @JoinColumn(name = "Id")
+    @JoinTable(name = "Order_OrderItem", joinColumns = {
+            @JoinColumn(name = "OrderItemId")})
     private List<OrderItem> listOrderItems;
 
     @Id
