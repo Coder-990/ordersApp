@@ -29,10 +29,10 @@ public class Order {
 
     @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinColumn(name = "Id")
-    private List<OrderItem> orderItems;
+    private List<OrderItem> listOrderItems;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "Id")
     private long id;
 

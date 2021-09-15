@@ -30,7 +30,6 @@ public class OrderItemServiceImpl {
         OrderItem updateOrderItem = findOneById(id);
         updateOrderItem.setName(orderitem.getName());
         updateOrderItem.setPrice(orderitem.getPrice());
-        updateOrderItem.setOrders(orderitem.getOrders());
         return orderItemRepository.saveAndFlush(orderitem);
     }
 
